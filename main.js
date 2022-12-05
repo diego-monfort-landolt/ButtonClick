@@ -33,6 +33,21 @@ cards.forEach((card, index) => {
         const isCardActive = card.classList.contains('active');
         cards.forEach((otherCard, otherIndex) =>{
             otherCard.classList.remove('active');
-        })
-    }
-})
+            otherCard.classList.remove('is-inactive')
+               if(!isCardActive && index !== otherIndex){
+                    otherCard.classList.add('is-inactive')
+                }
+        });
+        if(!isCardActive) card.classList.add('active');
+
+        //animation
+        Flip.from(state, {
+            duration: 1,
+            ease: "expo.out",
+            absolute: true,
+            onComplete: () => {
+                gsap.to('. p', {y: 300})
+            }
+        });
+    });
+});

@@ -54,7 +54,7 @@ section {
     
 }
 .card {
-    height: 25rem;
+    height: 5rem;
     border-radius: 1rem;
     cursor: pointer;
     display: flex;
@@ -88,5 +88,5 @@ section {
 }
 
 .card.is.inactive{
-    grid-column:span 2 ;
+    grid-column:span 2;
 }
