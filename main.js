@@ -5,12 +5,12 @@ const activeNav = document.querySelector('.active-nav');
 
 
 links.forEach((link) => {
-    link.addEventListener('click', ()=>{
+    link.addEventListener('click', () => {
         //nav Blue
         gsap.to(links, {color: '#252525'});
          if(document.activeElement === link){
             gsap.to(link, {color: '#385ae0'});
-        }
+             }
 
 //move the line
         const state = Flip.getState(activeNav);
@@ -20,10 +20,7 @@ links.forEach((link) => {
             absolute: true,
             ease:'elastic.out(1,0.5)'
         });
-
     });
-
-   
 });
 
 //cards
