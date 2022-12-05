@@ -49,12 +49,12 @@ section {
     display: flex;
     display: grid;
     grid-template-columns: repeat(6, 1fr) ;
-    grid-gap: 3rem;
-    margin: 5rem 10rem;
+    grid-gap: 1rem;
+    margin: 4rem 4rem;
     
 }
 .card {
-    height: 5rem;
+    height: 1rem;
     border-radius: 1rem;
     cursor: pointer;
     display: flex;
